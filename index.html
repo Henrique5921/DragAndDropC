@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-game de Geografia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="game-header">
+        <h1>🌍 Desafio Continental</h1>
+        <p>Arraste os países para os continentes corretos!</p>
+    </header>
+
+    <main class="game-board">
+        <section class="countries-pool" id="pool">
+            <h2>Países Disponíveis</h2>
+            <div class="pool-content">
+                <div class="country-card" draggable="true" data-continent="sa">🇧🇷 Brasil</div>
+                <div class="country-card" draggable="true" data-continent="eu">🇫🇷 França</div>
+                <div class="country-card" draggable="true" data-continent="as">🇯🇵 Japão</div>
+                <div class="country-card" draggable="true" data-continent="af">🇪🇬 Egito</div>
+                <div class="country-card" draggable="true" data-continent="na">🇨🇦 Canadá</div>
+                <div class="country-card" draggable="true" data-continent="oc">🇦🇺 Austrália</div>
+            </div>
+        </section>
+
+        <section class="continents-grid">
+            <div class="continent-zone" data-continent="sa">
+                <h3>América do Sul</h3>
+                <div class="drop-area"></div>
+            </div>
+            <div class="continent-zone" data-continent="na">
+                <h3>América do Norte</h3>
+                <div class="drop-area"></div>
+            </div>
+            <div class="continent-zone" data-continent="eu">
+                <h3>Europa</h3>
+                <div class="drop-area"></div>
+            </div>
+            <div class="continent-zone" data-continent="af">
+                <h3>África</h3>
+                <div class="drop-area"></div>
+            </div>
+            <div class="continent-zone" data-continent="as">
+                <h3>Ásia</h3>
+                <div class="drop-area"></div>
+            </div>
+            <div class="continent-zone" data-continent="oc">
+                <h3>Oceania</h3>
+                <div class="drop-area"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
